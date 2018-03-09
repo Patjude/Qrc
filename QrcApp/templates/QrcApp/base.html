@@ -12,53 +12,242 @@
     <title>QRC</title>
 </head>
 <body>
-  
-    <nav class="navbar navbar-inverse navabar-fixed-top">
-      <div class="container">
-        <h2>QRC</h2>
-      </div>
-    </nav>
-    
-  <div class="container">
-    <div class="row">
-     
-    <div class="col-md-12">
 
-    </div>
+    <style>
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
-    <div class="jumbotron">
-      <h1>QRC</h1>
-      <p>
-        <Lorem>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque culpa a nemo facere blanditiis deserunt maxime, aspernatur soluta ad est suscipit iusto incidunt! Architecto aperiam sunt asperiores expedita sed fugit.</Lorem>
-        <Lorem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque repellat perspiciatis commodi architecto quam rem, quas est. Reprehenderit rem officiis hic ducimus sit fugit id voluptatem, perspiciatis eaque, aliquam eligendi.</Lorem>
-      </p>
-    </div>
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    <div class="col-md-6">
-      <h3>QRC Sustainability projects</h3>
-    </div>
+}
 
-    <div class="col-md-6" style="padding-top:50px;">
-      <p>
-        <Lorem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi et distinctio atque ducimus rem. Quas facilis cupiditate eaque, ducimus provident, impedit officiis beatae animi reprehenderit natus, cumque quos sed maxime.</Lorem>
-        <Lorem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque. Itaque expedita accusamus aspernatur fuga officia fugit quisquam magni doloribus repudiandae, consequatur fugiat animi? Illo eum ipsum consectetur sed blanditiis?</Lorem>
-      </p>
-    </div>
+.bgimg-1 {
+  background-image: url("{% static 'assets/Media/q4.jpeg' %}");
+  min-height: 100%;
+}
 
-    <div></div>
+.bgimg-2 {
+  background-image: url("{% static 'assets/Media/q2.jpeg' %}");
+  min-height: 300px;
+}
 
-    </div>
+.bgimg-3 {
+  background-image: url("{% static 'assets/Media/q.jpeg' %}");
+  min-height: 300px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3,
+h1 {
+  letter-spacing: 2px;
+  /*text-transform: uppercase;*/
+  font: 20px "Lato", sans-serif;
+  color: white;
+}
+
+
+/*navbar*/
+
+.navbar {
+  background: black;
+  height: 100px;
+  width: 100%;
+}
+
+.navbar h1 {
+  float: left;
+  font-weight: 300;
+  padding-top: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 60px;
+  line-height: 55px;
+  padding-top: 9px;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  padding: 22px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.navbar ul li:hover {
+  background: black;
+  transition: all 0.40s;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul ul {
+  display: none;
+  margin-right: 40px;
+  width: 120px;
+}
+
+.navbar ul li li {
+  display: block;
+}
+
+.navbar ul li li a {
+  padding: 1px;
+}
+
+.navbar ul li li:hover {
+  background:black;
+  transition: all 0.40s;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+
+<head>
+  <h1>QRC</h1></head>
+<ul>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    HOME
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+    </ul>
   </div>
+
+</div>
+
+<div class="bgimg-1">
+<div class="caption">
+  <span class="border">QRC - SUSTAINABILITY TO ALL!!!!</span>
+</div>
+
+</div>
+
+<div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+<h3 style="text-align:center;"></h3>
+
+<p>
+  <h3>HEALTH</h3></p>HIV/AIDS, Sexual and Reproductive Health Rights, and Drugs and Substance Abuse.
+<p>
+  <h3>AGRICULTURE</h3></p>  tools required to undertake successful business, agriculture and entrepreneurship.
+<p>
+  <h3>EDUCATION</h3></p>gement of chronic disorders such as communicable and non-communicable disorders..</p>
+  <p>
+    <h3>FAITH BASED ORGANGIZATIONS</h3></p>HIV/AIDS, Sexual and Reproductive Health Rights, and Drugs and Substance Abuse.
+<p>
+    <h3>ENTERPRISE</h3></p>HIV/AIDS, Sexual and Reproductive Health Rights, and Drugs and Substance Abuse.
+
+</div>
+
+
+
+
+<div class="bgimg-2">
+<div class="caption">
+
+</div>
+</div>
+
+<div style="position:relative;">
+<div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:center;">EDUCATION PROGRAMS</h1>
+  <p>
+    <h3>Trailblazer Education Fund (TEF Program)</h3></p>
+  <p>This fund is designed to award scholarships to deserving young boys and girls who exhibit great intelligence and desire to enhance their education but are emanating from a vulnerable home or community and finances are standing as a stumbling block
+    to their educational achievements. This fund will seek to support such young brilliant minds with financial support for their tuition fee and procurement of learning materials.</p>
+
+</div>
+</div>
+
+<div class="bgimg-3">
+<div class="caption">
+
+</div>
+</div>
+
+
+
+<div style="position:relative;">
+<div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">COMMUNITY SERVICE PROGRAMS</h3>
+  <p>
+    <h3>Trash To Treasure </h3></p> This program emanated from a youth resolution during a climate change awareness training we conducted on 11th December, 2015 in Bauleni Township. The idea is to train youth ambassadors in techniques of reusing, recycling and reducing waste;
+  who in turn will be responsible to train other young people in their communities the techniques of reusing, recycling, and reducing waste. The proposal was that this program be merged with some aspects of entrepreneurship where the youth would see
+  the huge problem of waste they face in their communities as an opportunity for economic growth.
+
+</div>
+</div>
+
 
   <div class="footer-basic">
     <footer>
         <center>
+          <h3><b>CONTACT</b></h3>
+          <p>Email:qrc2018@gmail.com</p>
+          <p>Contact: +260964172850</p>
         <p class="copyright">QRC © 2017</p>
         </center>
-    </footer>  
+    </footer>
  </div>
 
  <script src="{% static 'QrcApp/js/jquery-3.2.1.js' %}"></script>
  <script src="{% static 'QrcApp/js/bootstrap.js' %}"></script>
+
 </body>
 </html>
